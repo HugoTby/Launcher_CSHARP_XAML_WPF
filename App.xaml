@@ -4,6 +4,11 @@
              xmlns:local="clr-namespace:Launcher"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <!--<Style x:Key="CustomFont">
+            <Setter Property="TextElement.FontFamily"
+                    Value="/Fonts/Exo.ttf #Exo">
+            </Setter>
+        </Style>-->
     </Application.Resources>
+    
 </Application>

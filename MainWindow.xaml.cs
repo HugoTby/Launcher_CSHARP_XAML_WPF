@@ -36,20 +36,24 @@ namespace Launcher
                 switch (_status)
                 {
                     case LauncherStatus.ready:
-                        PlayButton.Content = "Jouer";
+                        PlayButton.Content = "  Accéder à UniChat  ";
                         PlayButton.Foreground = System.Windows.Media.Brushes.White;
+                        PlayButton.FontSize = 20;
                         break;
                     case LauncherStatus.failed:
-                        PlayButton.Content = "Échec de la mise à jour, veuillez réessayer";
+                        PlayButton.Content = "  Échec de la mise à jour, veuillez réessayer  ";
                         PlayButton.Foreground = System.Windows.Media.Brushes.White;
+                        PlayButton.FontSize = 20;
                         break;
                     case LauncherStatus.downloadingGame:
-                        PlayButton.Content = "Téléchargement du jeu en cours ...";
+                        PlayButton.Content = "  Téléchargement d'UniChat en cours ...  ";
                         PlayButton.Foreground = System.Windows.Media.Brushes.White;
+                        PlayButton.FontSize = 20;
                         break;
                     case LauncherStatus.downloadingUpdate:
-                        PlayButton.Content = "Mise à jour en cours ...";
+                        PlayButton.Content = "  Mise à jour en cours ...  ";
                         PlayButton.Foreground = System.Windows.Media.Brushes.White;
+                        PlayButton.FontSize = 20;
                         break;
                     default:
                         break;
@@ -93,7 +97,7 @@ namespace Launcher
                 catch (Exception ex)
                 {
                     Status = LauncherStatus.failed;
-                    MessageBox.Show($"Erreur, impossible de vérifier les mises à jour du jeu: {ex}");
+                    //MessageBox.Show($"Erreur, impossible de vérifier les mises à jour d'UniChat: {ex}");
                 }
             }
             else
@@ -123,7 +127,7 @@ namespace Launcher
             catch (Exception ex)
             {
                 Status = LauncherStatus.failed;
-                MessageBox.Show($"Erreur, impossible d'installer les fichiers du jeu: {ex}");
+                //MessageBox.Show($"Erreur, impossible d'installer les fichiers d'UniChat: {ex}");
             }
         }
 
@@ -143,7 +147,7 @@ namespace Launcher
             catch (Exception ex)
             {
                 Status = LauncherStatus.failed;
-                MessageBox.Show($"Erreur, impossible de finir le téléchargement du jeu: {ex}");
+                //MessageBox.Show($"Erreur, impossible de finir le téléchargement d'UniChat: {ex}");
             }
         }
 
@@ -165,6 +169,67 @@ namespace Launcher
             else if (Status == LauncherStatus.failed)
             {
                 CheckForUpdates();
+            }
+        }
+
+        private void closeApp(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            try
+            {
+                Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        private void minimizeApp(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            try
+            {
+                this.WindowState = WindowState.Minimized;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void resizeApp(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            try
+            {
+                if (WindowState == WindowState.Normal)
+                {
+                    // Si la fenêtre est actuellement en mode normal, bascule en mode maximisé
+                    WindowState = WindowState.Maximized;
+                }
+                else if (WindowState == WindowState.Maximized)
+                {
+                    // Si la fenêtre est actuellement maximisée, bascule en mode normal
+                    WindowState = WindowState.Normal;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+
+        private void cursorChange(object sender, System.Windows.Input.MouseEventArgs e)
+        {
+            try
+            {
+                var element = sender as FrameworkElement;
+                if (element != null)
+                {
+                    element.Cursor = System.Windows.Input.Cursors.Hand;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
     }

@@ -7,17 +7,253 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Fonts\Exo-Black-Italic.otf" />
+    <None Remove="Fonts\Exo-Black.otf" />
+    <None Remove="Fonts\Exo-Bold-Italic.otf" />
+    <None Remove="Fonts\Exo-Bold.otf" />
+    <None Remove="Fonts\Exo-DemiBold-Italic.otf" />
+    <None Remove="Fonts\Exo-DemiBold.otf" />
+    <None Remove="Fonts\Exo-ExtraBold-Italic.otf" />
+    <None Remove="Fonts\Exo-ExtraBold.otf" />
+    <None Remove="Fonts\Exo-ExtraLight-Italic.otf" />
+    <None Remove="Fonts\Exo-ExtraLight.otf" />
+    <None Remove="Fonts\Exo-ExtraLight.ttf" />
+    <None Remove="Fonts\Exo-ExtraLightItalic.ttf" />
+    <None Remove="Fonts\Exo-Italic.ttf" />
+    <None Remove="Fonts\Exo-Light-Italic.otf" />
+    <None Remove="Fonts\Exo-Light.otf" />
+    <None Remove="Fonts\Exo-Light.ttf" />
+    <None Remove="Fonts\Exo-LightItalic.ttf" />
+    <None Remove="Fonts\Exo-Medium-Italic.otf" />
+    <None Remove="Fonts\Exo-Medium.otf" />
+    <None Remove="Fonts\Exo-Medium.ttf" />
+    <None Remove="Fonts\Exo-MediumItalic.ttf" />
+    <None Remove="Fonts\Exo-Regular-Italic.otf" />
+    <None Remove="Fonts\Exo-Regular.otf" />
+    <None Remove="Fonts\Exo-Regular.ttf" />
+    <None Remove="Fonts\Exo-SemiBold.ttf" />
+    <None Remove="Fonts\Exo-SemiBoldItalic.ttf" />
+    <None Remove="Fonts\Exo-Thin-Italic.otf" />
+    <None Remove="Fonts\Exo-Thin.otf" />
+    <None Remove="Fonts\Exo-Thin.ttf" />
+    <None Remove="Fonts\Exo-ThinItalic.ttf" />
+    <None Remove="Fonts\exo.medium.otf" />
+    <None Remove="Fonts\Exo.ttf" />
+    <None Remove="Fonts\Exo2-Black.ttf" />
+    <None Remove="Fonts\Exo2-BlackItalic.ttf" />
+    <None Remove="Fonts\Exo2-Bold.ttf" />
+    <None Remove="Fonts\Exo2-BoldItalic.ttf" />
+    <None Remove="Fonts\Exo2-ExtraBold.ttf" />
+    <None Remove="Fonts\Exo2-ExtraBoldItalic.ttf" />
+    <None Remove="Fonts\Exo2-ExtraLight.ttf" />
+    <None Remove="Fonts\Exo2-ExtraLightItalic.ttf" />
+    <None Remove="Fonts\Exo2-Italic.ttf" />
+    <None Remove="Fonts\Exo2-Light.ttf" />
+    <None Remove="Fonts\Exo2-LightItalic.ttf" />
+    <None Remove="Fonts\Exo2-Medium.ttf" />
+    <None Remove="Fonts\Exo2-MediumItalic.ttf" />
+    <None Remove="Fonts\Exo2-Regular.ttf" />
+    <None Remove="Fonts\Exo2-SemiBold.ttf" />
+    <None Remove="Fonts\Exo2-SemiBoldItalic.ttf" />
+    <None Remove="Fonts\Exo2-Thin.ttf" />
+    <None Remove="Fonts\Exo2-ThinItalic.ttf" />
     <None Remove="Images\Background.jpg" />
     <None Remove="Images\Background.png" />
     <None Remove="Images\betagames.jpg" />
+    <None Remove="Images\bg.png" />
+    <None Remove="Images\bg2.png" />
+    <None Remove="Images\down.gif" />
+    <None Remove="Images\icon_closebis.png" />
+    <None Remove="Images\icon_maximisebis.png" />
+    <None Remove="Images\icon_minimisebis.png" />
+    <None Remove="Images\icon_restorebis.png" />
     <None Remove="Images\logo.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Fonts\Exo-Black-Italic.otf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Exo-Black.otf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Exo-Bold-Italic.otf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Exo-Bold.otf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Exo-DemiBold-Italic.otf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Exo-DemiBold.otf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Exo-ExtraBold-Italic.otf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Exo-ExtraBold.otf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Exo-ExtraLight-Italic.otf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Exo-ExtraLight.otf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Exo-Light-Italic.otf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Exo-Light.otf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Exo-Medium-Italic.otf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Exo-Medium.otf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Exo-Regular-Italic.otf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Exo-Regular.otf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Exo-Thin-Italic.otf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Exo-Thin.otf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Exo.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Exo2-Black.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Exo2-BlackItalic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Exo2-Bold.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Exo2-BoldItalic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Exo2-ExtraBold.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Exo2-ExtraBoldItalic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Exo2-ExtraLight.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Exo2-ExtraLightItalic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Exo2-Italic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Exo2-Light.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Exo2-LightItalic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Exo2-Medium.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Exo2-MediumItalic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Exo2-Regular.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Exo2-SemiBold.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Exo2-SemiBoldItalic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Exo2-Thin.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Exo2-ThinItalic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Fonts\Exo-ExtraLight.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Exo-ExtraLightItalic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Exo-Italic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Exo-Light.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Exo-LightItalic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Exo-Medium.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Exo-MediumItalic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Exo-Regular.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Exo-SemiBold.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Exo-SemiBoldItalic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Exo-Thin.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\Exo-ThinItalic.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Fonts\exo.medium.otf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Images\Background.jpg" />
     <Resource Include="Images\Background.png" />
     <Resource Include="Images\betagames.jpg" />
+    <Resource Include="Images\bg.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Images\bg2.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\down.gif" />
+    <Resource Include="Images\icon_closebis.png" />
+    <Resource Include="Images\icon_maximisebis.png" />
+    <Resource Include="Images\icon_minimisebis.png" />
+    <Resource Include="Images\icon_restorebis.png" />
     <Resource Include="Images\logo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
 
 </Project>

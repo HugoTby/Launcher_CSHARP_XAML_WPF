@@ -6,47 +6,75 @@
         xmlns:local="clr-namespace:Launcher"
         mc:Ignorable="d"
         WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        Background="Transparent"
+        AllowsTransparency="True"
+        ResizeMode="NoResize"
         ContentRendered="Window_ContentRendered"
-        Title="BetaGames Launcher" Height="576" Width="1080">
-    <Grid>
-        <Image Stretch="UniformToFill" Source="Images/Background.png" HorizontalAlignment="Right">
+        Title="BetaGames - UniChat Launcher" Height="576" Width="1080">
+    <!--<Border Background="#D9D9D9" CornerRadius="15">-->
+    <Border Background="#272537" CornerRadius="15">
+        <Grid>
+            <Ellipse Fill="#FF3B30" Height="17" Width="17" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,15,0" MouseLeftButtonUp="closeApp" MouseEnter="cursorChange" />
+            <Ellipse Fill="#7FFF9500" Height="17" Width="17" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,40,0" />
+            <Ellipse Fill="#34C759" Height="17" Width="17" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,65,0" MouseLeftButtonUp="minimizeApp" MouseEnter="cursorChange" />
+            <!--<Image Source="Images/icon_closebis.png" Height="17" Width="17" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,10,15,0" MouseLeftButtonUp="closeApp" MouseEnter="cursorChange" />-->
 
-        </Image>
-        <Image Stretch="Uniform" Source="Images/betagames.jpg" VerticalAlignment="Top" HorizontalAlignment="Center" Height="365" Width="198" RenderTransformOrigin="0.54,0.595" Margin="0,76,0,0">
+            <!--<Image Stretch="UniformToFill" Source="Images/Background.png" HorizontalAlignment="Right">
 
-        </Image>
-        <TextBlock Name="VersionTextPrev" Text="Version" VerticalAlignment="Bottom" HorizontalAlignment="Right" FontSize="20" Foreground="White" Margin="0,0,53,0"/>
-        <TextBlock Name="VersionText" VerticalAlignment="Bottom" HorizontalAlignment="Right" FontSize="20" Foreground="White" Margin="0, 0, 5, 0"/>
-        <Button Name="PlayButton" Click="PlayButton_Click" Height="60" FontSize="28" FontWeight="Normal" Margin="0,0,0,15" VerticalAlignment="Bottom" HorizontalAlignment="Center" MinWidth="150">
-            <Button.Content>
-                <StackPanel Orientation="Horizontal">
-                    <Image Source="Images/logo.png" Height="40" Margin="0,0,10,0"/>
-                    <TextBlock Padding="10" Text="Recherche de mises à jour" Foreground="#DDFFFFFF"/>
-                </StackPanel>
-            </Button.Content>
-            <Button.Template>
-                <ControlTemplate TargetType="Button">
-                    <Grid>
-                        <Border x:Name="Border" Background="#FFC32929" BorderBrush="#FFC32929" BorderThickness="1" CornerRadius="5"/>
-                        <ContentPresenter x:Name="ContentPresenter" Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    </Grid>
-                    <ControlTemplate.Triggers>
-                        <Trigger Property="IsMouseOver" Value="True">
-                            <Setter TargetName="Border" Property="Background" Value="#FFD64949"/>
-                            <Setter TargetName="Border" Property="BorderBrush" Value="#FFD64949"/>
-                        </Trigger>
-                        <Trigger Property="IsPressed" Value="True">
-                            <Setter TargetName="Border" Property="Background" Value="#FFB81919"/>
-                            <Setter TargetName="Border" Property="BorderBrush" Value="#FFB81919"/>
-                        </Trigger>
-                        <Trigger Property="IsEnabled" Value="False">
-                            <Setter TargetName="Border" Property="Background" Value="#FF999999"/>
-                            <Setter TargetName="Border" Property="BorderBrush" Value="#FF999999"/>
-                            <Setter TargetName="ContentPresenter" Property="Opacity" Value="0.5"/>
-                        </Trigger>
-                    </ControlTemplate.Triggers>
-                </ControlTemplate>
-            </Button.Template>
-        </Button>
-    </Grid>
+            </Image>-->
+            <!--<Image Stretch="Uniform" Source="Images/betagames.jpg" VerticalAlignment="Top" HorizontalAlignment="Center" Height="379" Width="387" RenderTransformOrigin="0.54,0.595" Margin="0,76,0,0">
+
+            </Image>-->
+            <Image Stretch="Uniform" Source="Images/bg2.png" VerticalAlignment="Top" HorizontalAlignment="Left" Height="87" Width="81" RenderTransformOrigin="0.54,0.595" Margin="574,212,0,0"></Image>
+            <TextBlock Name="appInfoText" FontFamily="Exo" Text="Lycée La Providence Amiens - Section BTS - Année 2022-2023" VerticalAlignment="Bottom" HorizontalAlignment="left" FontSize="15" Foreground="#8B8686" Margin="15,0,0,10"/>
+            <TextBlock Name="VersionTextPrev" FontFamily="Exo" Text="Version" VerticalAlignment="Bottom" HorizontalAlignment="Right" FontSize="15" Foreground="#8B8686" Margin="0,0,129,6"/>
+            <TextBlock x:Name="VersionTextPrev2" FontFamily="Exo" VerticalAlignment="Bottom" HorizontalAlignment="Right" FontSize="15" Foreground="#8B8686" Margin="0,0,14,6"><Run Language="fr-fr" Text="+202306.20"/></TextBlock>
+            <TextBlock Name="VersionText" FontFamily="Exo" VerticalAlignment="Bottom" HorizontalAlignment="Right" FontSize="15" Foreground="#8B8686" Margin="0,0,94,6"/>
+            <TextBlock Name="TitleText" Text="UniChat" FontFamily="Exo" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="64" Foreground="#8B8686" Margin="0,177,0,0" FontWeight="Normal" >
+                <TextBlock.Effect>
+                    <DropShadowEffect  BlurRadius="5" Direction="650" ShadowDepth="5" Opacity="0.2"/>
+                </TextBlock.Effect>
+            </TextBlock>
+            <TextBlock Name="TitleText2" Text="Par" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="13" Foreground="#8B8686" Margin="551,243,0,0" >
+                <TextBlock.Effect>
+                    <DropShadowEffect  BlurRadius="5" Direction="650" ShadowDepth="5" Opacity="0.2"/>
+                </TextBlock.Effect>
+            </TextBlock>
+            <Button Name="PlayButton" Click="PlayButton_Click" Height="60" FontSize="28" FontWeight="Normal" Margin="0,0,0,85" VerticalAlignment="Bottom" HorizontalAlignment="Center" MinWidth="150" Background="#A5777272" MouseEnter="cursorChange" BorderThickness="1,1,1,1" SnapsToDevicePixels="True">
+                <Button.Effect>
+                    <DropShadowEffect BlurRadius="5" Direction="650" ShadowDepth="5" Opacity="0.2"/>
+                </Button.Effect>
+                <Button.Content>
+                    <StackPanel Orientation="Horizontal">
+                        <!--<Image Source="Images/logo.png" Height="40" Margin="0,0,10,0"/>-->
+                        <TextBlock Padding="10" Text="Recherche de mises à jour" Foreground="#DDFFFFFF" FontSize="16" FontFamily="Exo"/>
+                    </StackPanel>
+                </Button.Content>
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Grid>
+                            <Border x:Name="Border" Background="#A5777272" BorderBrush="#A5777272" BorderThickness="1" CornerRadius="5"/>
+                            <ContentPresenter x:Name="ContentPresenter" Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="Border" Property="Background" Value="#FF777272"/>
+                                <Setter TargetName="Border" Property="BorderBrush" Value="#FF777272"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="Border" Property="Background" Value="#FF777272"/>
+                                <Setter TargetName="Border" Property="BorderBrush" Value="#FF777272"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter TargetName="Border" Property="Background" Value="#FF999999"/>
+                                <Setter TargetName="Border" Property="BorderBrush" Value="#FF999999"/>
+                                <Setter TargetName="ContentPresenter" Property="Opacity" Value="0.5"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+        </Grid>
+    </Border>
 </Window>
